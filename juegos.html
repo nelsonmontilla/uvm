@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="stylesheet" href="style.css"> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>juegos</title>
+</head>
+<body class="body">
+  <header class="header">
+   <a href="index.html" >
+    <img src="trucoteca.png" alt="trucoteca" width="500px" ></a>
+
+  <div>
+   </header>   
+  </div>
+  <div>
+<nav class="navegacionbasica">
+      <ul >
+     <li><a href="index.html">Sobre nosotros</a></li> 
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="juegos.html">Juegos</a></li>
+      <li><a href="sorpresa.html">Sorpresa</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+ 
+  <main>
+    <section id="juegos" class="juegos-bar">
+        <h2 class="juegos-h2" style="text-align: center;">Nuestros Juegos</h2>
+
+<body>
+
+
+<div class="imagenesjuegos" style="align-items: center;">
+    <div class="slideshow-container">
+      <a href="https://www.cyberpunk.net/us/es/">
+  <img class="mySlides" src="https://cdn.dlcompare.com/game_tetiere/upload/gameimage/file/37703.jpeg.webp" style="width:100%"> </a>
+      <a href="https://pathofexile2.com">
+  <img class="mySlides" src="poe2.webp" style="width: 100%;"height="100%"></a>
+  <a href="https://store.steampowered.com/agecheck/app/4465480?l=latam">
+  <img class="mySlides" src="csgo.jpg" style="width: 100%;"height="100%"></a>
+  <a href="https://store.steampowered.com/app/1238000/Edicin_Deluxe_de_Mass_Effect_Andromeda/?l=spanish">
+  <img class="mySlides" src="mass.jpg" style="width:100%;" height="50%"></a>
+</div>
+
+</div>
+  <button class="izquierda" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="derecha" onclick="plusDivs(1)">&#10095;</button>
+</section>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</html>

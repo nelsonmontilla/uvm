@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="style.css">
+<head class="headsorpresa">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿No te esperabas eso?</title>
+</head>
+<body class="bodysorpresa">
+  <div class="popupsorpresa" id="popupsorpresa">
+    <div class="popup-contentsorpresa">
+      <button class="close-btnsorpresa" id="closeBtnsopresa">Cerrar</button>
+      <img src="https://templates.business-in-a-box.com/imgs/1000px/formulario-de-solicitud-de-empleo-D3516.png" alt="Imagen de miedo">
+      <audio autoplay>
+        <source src="surpresaaaaaaa.mp3" type="audio/mpeg">
+    </div>
+  </div>
+
+  <script>
+    const popup = document.getElementById('popupsorpresa');
+    const closeBtn = document.getElementById('closeBtnsopresa');
+
+    function mostrarPopup() {
+      popup.classList.add('show');
+    }
+
+    function cerrarPopup() {
+      popup.classList.remove('show');
+    }
+
+    window.addEventListener('load', () => {
+      setTimeout(mostrarPopup, 1000);
+    });
+
+    closeBtn.addEventListener('click', cerrarPopup);
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup) cerrarPopup();
+    });
+  </script>
+</body>
+</html>

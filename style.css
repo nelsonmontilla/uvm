@@ -1,0 +1,358 @@
+body {
+    padding:0;
+background: #f5f2f2;
+background: linear-gradient(90deg,rgba(245, 242, 242, 1) 0%, rgba(76, 133, 89, 1) 50%, rgba(153, 153, 139, 1) 96%, rgba(237, 221, 83, 1) 100%);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+.titulo{
+  color: #0a0a0a;
+  
+}
+
+    header {
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 16px;
+      padding-top: 16px;
+      justify-content: center;
+      display: flex;
+    }
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-color: #ccc;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    main {
+      padding: 24px;
+    }
+    section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    
+  
+
+   .bodysorpresa {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .popupsorpresa {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 5s ease;
+    }
+    .popupsorpresa.show {
+    
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .popup-contentsorpresa {
+      
+      position: relative;
+      max-width: 90%;
+      max-height: 90%;
+      border: 4px solid #880000;
+      box-shadow: 0 0 40px rgba(200, 0, 0, 0.8);
+      overflow: hidden;
+      background: #111;
+      border-radius: 12px;
+    }
+    .popup-contentsorpresa img {
+      display: block;
+      width: auto ;
+      height: auto;
+    }
+    .close-btnsorpresa {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #f00;
+      color: #fff;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+    .mensaje {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+   
+
+    .formulario-registro {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      grid: 1px;
+      
+    }
+    .formulario-registro h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      grid: 1px;   
+    }
+
+.formulario-registro label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.formulario-registro input {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  justify-content: center;
+}
+.formulario-registro button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.formulario-registro button:hover {
+  background-color: #555;
+}
+
+.mySlides {display:flex;}
+
+.izquierda {
+  grid-area: btn-izq;
+  background-color: #23944580;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  max-height: 20%;
+  align-self: center;
+  min-width: 25%;
+  min-height: 15%;
+}
+
+.derecha {
+  grid-area: btn-der;
+  background-color: #23944580;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  max-height: 20%;
+  align-self: center;
+  min-width: 25%;
+  min-height: 15%;
+}
+.mySlides {
+  display: none;
+  max-width: 79%;
+  max-height: 50%;
+}
+
+
+
+.slideshow-container {
+  position: relative;
+justify-content: center;
+margin-left: 15%;
+}
+
+.juegos-bar {
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem;
+  grid-template-rows: 3rem 1fr;
+  grid-template-areas: 
+  "headtitle headtitle headtitle"
+  "btn-izq contentimg btn-der"
+  ;
+  min-width: 650px;
+  min-height: auto;
+}
+
+.juegos-h2 {
+  grid-area: headtitle;
+  color: red;
+}
+
+.imagenesjuegos {
+  grid-area: contentimg;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.bienvenida {
+   display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.articulo {
+   display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.registro{
+    background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZms2N2M4bnJxZHM5dTNxazRlY2FsYmZ0eW5uM3kzODRrZm05b2d1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nIlgTxY29wJuU/giphy.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario-registro button{
+    color: green;
+    background-color: black;
+touch-action: pinch-zoom;
+}
+
+.botonatras{  
+    justify-content: center;
+    display: flex
+      }
+
+.sidenav{
+  color:green;
+}
+
+.navegacionbasica {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+li a:hover {
+  background-color: #555555;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .main-nav a {
+        margin: 0 10px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    
+    .post-card {
+        padding: 20px;
+    }
+    
+    .post-title {
+        font-size: 24px;
+    }
+}
+
+.p{
+  text-align: center;
+  text-overflow: clip;
+ }
